@@ -57,20 +57,16 @@
 
 #### attack_with_burp
 ```
-得益于burp插件的强大，我们可以直接把利用成功的payload从burp中复制出来，只需简单修改即可使用框架进行批量攻击，具体流程如下
+得益于burp插件的强大，我们可以直接把利用成功的payload从burp中复制出来，
+只需简单修改即可使用框架进行批量攻击，具体流程参见demo.mp4
 ```
-
-
-<p align="center">
-<video id="video" controls="" preload="none">
-      <source id="mp4" src="demo.mp4" type="video/mp4">
-</video>
-</p>
-
 
 #### attack_with_aoiawd
 ```
-得益于AoiAWD的Guardian模块(二进制PWN的影子外壳)，我们可以透明记录STDIN与STDOUT的流量，以此实现流量的重放，用别人的payload打其他人...(主要是我们没有pwn...只能间接做题)
+得益于AoiAWD的Guardian模块(二进制PWN的影子外壳)，
+我们可以透明记录STDIN与STDOUT的流量，
+以此实现流量的重放，用别人的payload打其他人...
+(主要是我们没有pwn...只能间接做题)
 ```
 
 #### modify_ssh_password
@@ -84,7 +80,7 @@
 ```
 
 ### 使用方法
-attack_with_burp：
+attack_with_burp(具体流程参见demo.mp4)：
 1. 新建一个web{n}_exp.py
 2. 从templates中复制模板内容粘贴到web{n}_exp.py
 3. 新建一个web{n}.txt，在里面填入要打的ip，同时修改web{n}_exp.py中的 target_file = "web{n}.txt"
